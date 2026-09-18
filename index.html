@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lapis.planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>💎 Lapis.planner</h1>
+    <p>Your life. Your plans. Your way.</p>
+  </header>
+
+  <main>
+
+    <section class="dashboard">
+      <h2>Dashboard</h2>
+
+      <div class="stats">
+        <div class="card">
+          <h3>🪙 Coins</h3>
+          <p id="coins">0</p>
+        </div>
+
+        <div class="card">
+          <h3>✅ Tasks</h3>
+          <p id="taskCount">0</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="planner">
+      <h2>Today's Planner</h2>
+
+      <div class="add-task">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Add something you need to do..."
+        >
+
+        <button onclick="addTask()">Add Task</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </section>
+
+    <section class="shop">
+      <h2>🎨 Background Shop</h2>
+      <p>Use your coins to unlock backgrounds later!</p>
+
+      <button disabled>Coming Soon</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Lapis.planner</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
